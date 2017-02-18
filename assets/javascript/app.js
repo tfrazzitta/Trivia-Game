@@ -74,7 +74,7 @@ var correctArray=["Chris Farley",
 				  "The Panic in Needle Park"];
 
 var pics = ["assets/images/giphy.gif","assets/images/giphy1.gif","assets/images/giphy(2).gif","assets/images/giphy(3).gif","assets/images/giphy(4).gif","assets/images/giphy(5).gif","assets/images/giphy(6).gif","assets/images/cant-hardley.jpg","assets/images/giphy(8).gif","assets/images/giphy(9).gif"];
-var time= 10;
+var time= 15;
 var intervalId;
 var endTime= 0;
 var count = 0;
@@ -82,7 +82,6 @@ var correct= 0;
 var wrong=0;
 var interval;
 var clicked= false;
-
  
 $('#audio1')[0].play();
 $("#display").html(time);
@@ -102,7 +101,7 @@ function BeginGame(){
 }
 
 function ResetGame(){
-	time=11;
+	time=16;
 	count=0;
 	confirm("ARE YOU READY TO PLAY");
 	start();
@@ -111,7 +110,7 @@ function ResetGame(){
 
 
  function Reset(){
- 	 time=10;
+ 	 time=15;
      count++;
      console.log(correct);
   if(count===10){
@@ -231,9 +230,10 @@ function GameOver(){
 	time=0;
 	clearInterval(intervalId);
 	$("#audio1").trigger('pause');
-	var c= confirm("GAME OVER");
+	var c= confirm("GAME OVER.....Press OK to Play Again?");
 if (c===true){
-      ResetGame();
+     // ResetGame();
+    document.location.reload();
 }
 
 else{
@@ -245,6 +245,7 @@ else{
  	  $("#tally").html("-");
       $("#display").html("-");
  	  $("#question").html("Game Over");
+ 	  $("#show").html("<img src='assets/images/trivia.gif'>");
 	}
 };
 
