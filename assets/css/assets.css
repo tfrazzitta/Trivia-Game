@@ -1,0 +1,61 @@
+body{
+    background:url(http://cdn.superbook.cbn.com/sites/default/files/games/background/JWS_1916x1080b.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+#A,#C,#B,#D{
+    padding-left: 20px;
+    font-weight: bold;
+    font-family: 'Caveat Brush', cursive;
+    }
+#ques{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 30px;
+    }
+#show{
+    background-size:100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    }
+#show img{
+    border:10px solid black;
+    text-align: center;
+    width:300px;
+    height: 300px;
+    margin-top:10px;
+    }
+#question{
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top:20px;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 30px;
+    }
+#display,#tally{
+    text-align: center;
+    font-size:20px;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 20px;
+    }
+#A:hover,#B:hover,#C:hover,#D:hover{
+    color:orange;
+    }
+#time-background,#question-background{
+    width:300px;
+    height:100px;
+    background-color: #337ab7;
+    margin-left: 30px;
+    border-radius:4%;
+    border:2px solid black;
+    margin-top:10px;
+    }
+    #start{
+    margin-left: 150px;
+    margin-top: 70px;
+    font-family: 'Caveat Brush', cursive;
+    border:1px solid black;
+    }
+    #buttonA,#buttonB,#buttonC,#buttonD{
+    border:1px solid black;
+    }

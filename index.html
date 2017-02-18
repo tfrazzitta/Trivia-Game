@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+    
+    
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Grand+Hotel|Permanent+Marker|Rancho" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+  </head>
+  <body>
+    
+    <audio id="audio1">
+      <source src="assets/images/price-is-right.mp3" type="audio/mpeg">
+    </audio>
+    <div class="row">
+      <div class="col-xs-6 col-md-4">
+        <div id="time-background">
+          <div id="ques">Time Remaining</div> <div id="display"></div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-md-4"> <div id="show"></div>
+    </div>
+    
+    <div class="col-xs-6 col-md-4">
+      <div id="question-background">
+        <div id="ques">Question</div><div id="tally"> </div>
+      </div>
+      <div i="percent"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-2"></div>
+    <div class="col-xs-6 col-md-8"> <div id="question"></div>
+  </div>
+  <div class="col-xs-6 col-md-2"></div>
+</div>
+
+<div class="row">
+  <div class="col-xs-6 col-md-4"><button type="button" class="btn btn-primary btn-lg active" onclick="BeginGame()" id="start">Start</button></div>
+  <div class="col-xs-6 col-md-4">
+    <button id="buttonA" type="button" class="btn btn-primary btn-lg btn-block"><div id="A"></div></button>
+    <button id="buttonB" type="button" class="btn btn-primary btn-lg btn-block"><div id="B"></div></button>
+    <button id="buttonC" type="button" class="btn btn-primary btn-lg btn-block"><div id="C"></div></button>
+    <button id="buttonD"type="button" class="btn btn-primary btn-lg btn-block"><div id="D"></div></button>
+  </div>
+  <div class="col-xs-6 col-md-4"><button type="button" class="btn btn-primary btn-lg active" onclick="GameOver()" id="start">Restart</button>
+  </div>
+</div>
+<audio id="audio">
+  <source src="assets/images/gi.mp3" type="audio/mpeg">
+</audio>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="bower_components/es6-promise/es6-promise.auto.min.js"></script>
+<script src="bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
